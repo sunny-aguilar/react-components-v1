@@ -9,9 +9,21 @@ const App = () => {
   return (
     <div className="ui container comments">
       {/* JSX components are treated as tags */}
-      <CommentDetail author={faker.name.firstName()} />
-      <CommentDetail author={faker.name.firstName()} />
-      <CommentDetail author={faker.name.firstName()} />
+      <CommentDetail
+        author={faker.name.firstName()}
+        img={faker.image.avatar()}
+        comment={faker.lorem.sentence()}
+      />
+      <CommentDetail
+        author={faker.name.firstName()}
+        img={faker.image.avatar()}
+        comment={faker.lorem.sentence()}
+      />
+      <CommentDetail
+        author={faker.name.firstName()}
+        img={faker.image.avatar()}
+        comment={faker.lorem.sentence()}
+      />
     </div>
   );
 };
