@@ -3,6 +3,11 @@ import React from "react";
 
 // Create a react component (access props here)
 const ApprovalCard = () => {
-  return ();
-}
+  return (
+    <div className="card">
+      <div className="content"></div>
+    </div>
+  );
+};
 
+export default ApprovalCard;
